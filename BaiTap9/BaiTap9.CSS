@@ -1,0 +1,104 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #cccccc;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #222;
+}
+
+#root {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 25px 20px;
+    background-color: #cccccc;
+    font-size: 16px;
+}
+
+.header {
+    text-align: center;
+    font-size: 28px;
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+#root > .description {
+    margin: 0 20px 38px;
+    padding: 20px 40px;
+    background-color: #858585;
+    border: 3px solid white;
+    border-radius: 12px;
+    line-height: 1.2;
+}
+
+.remark {
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 25px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+.heroes-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-item {
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    height: 320px;
+    margin: 0;
+}
+
+.hero-item h2 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    padding: 0 0 12px;
+    background: none;
+    color: #222;
+}
+
+.hero-item img {
+    position: absolute;
+    top: 125px;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border: none;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.hero-item .description {
+    position: absolute;
+    top: 30px;
+    left: 3%;
+    width: 94%;
+    height: 190px;
+    margin: 0;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    text-align: justify;
+    background: rgba(90, 90, 90, 0.78);
+    border: 2px solid white;
+    border-radius: 4px;
+    z-index: 1;
+}

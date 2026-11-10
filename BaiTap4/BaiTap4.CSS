@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.subject-menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.subject-menu li {
+  width: 88px;
+  text-align: center;
+  background: #00e5e5;
+}
+
+.subject-menu a {
+  display: block;
+  padding: 6px 0;
+  color: #0645ad;
+  font-size: 20px;
+  text-decoration: underline;
+}
