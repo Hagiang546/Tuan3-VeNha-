@@ -28,6 +28,6 @@ Mỗi Exercise có `index.html` và `script.js` riêng.
 ## Chạy
 Mở thư mục bằng VS Code và dùng Live Server mở `index.html`. Bài GET/AJAX cần Internet. jQuery được nạp từ CDN, có bản local dự phòng.
 
-## GitHub Pages
+## GitHub Pages dự kiến
 `https://hagiang546.github.io/Tuan3-VeNha-/JavaScript-Labs/`
 Sau khi thêm thư mục vào repository và bật Pages từ branch main, kiểm tra URL thực tế.

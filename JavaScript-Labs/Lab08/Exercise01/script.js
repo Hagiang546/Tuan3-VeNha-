@@ -1,0 +1,1 @@
+const s=document.querySelector('#out');s.textContent='JavaScript đang bật và thực thi thành công.';s.className='notice success';
