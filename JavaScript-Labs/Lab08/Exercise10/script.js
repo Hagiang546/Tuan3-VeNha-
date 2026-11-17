@@ -1,0 +1,1 @@
+const product={id:'SP001',name:'Tai nghe không dây',price:450000,inStock:true,label(){return this.name+' - '+this.price.toLocaleString('vi-VN')+'đ'}};document.querySelector('#out').textContent=product.label()+' | Còn hàng: '+product.inStock;

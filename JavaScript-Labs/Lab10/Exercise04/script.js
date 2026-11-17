@@ -1,0 +1,1 @@
+$(function(){$('.panel').on('mousemove',e=>$('#out').text(`x=${e.pageX}, y=${e.pageY}`)).on('mouseleave',()=>$('#out').text('goodbye!')).on('click',()=>{$('#out').text('Đã tắt mousemove');$('.panel').off('mousemove')});});

@@ -1,0 +1,1 @@
+const panel=document.querySelector('#panel');document.querySelector('#toggle').onclick=()=>{panel.hidden=!panel.hidden};const hover=document.querySelector('#hover');hover.onmouseover=()=>hover.classList.add('highlight');hover.onmouseout=()=>hover.classList.remove('highlight');

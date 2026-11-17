@@ -1,0 +1,1 @@
+const name='  JavaScript Essentials  ';const today=new Date();document.querySelector('#out').innerHTML=`String: ${name.trim().toUpperCase()}<br>Date: ${today.toLocaleDateString('vi-VN')}<br>Math.round(12.68): ${Math.round(12.68)}<br>Number: ${(125000).toLocaleString('vi-VN')}đ`;

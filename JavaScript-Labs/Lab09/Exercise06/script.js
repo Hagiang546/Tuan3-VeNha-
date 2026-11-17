@@ -1,0 +1,1 @@
+document.querySelector('#debug').addEventListener('click',e=>{const info={type:e.type,target:e.target.id,time:new Date().toLocaleTimeString()};console.log(info);debugger;document.querySelector('#out').textContent=JSON.stringify(info,null,2)});

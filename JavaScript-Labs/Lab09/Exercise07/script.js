@@ -1,0 +1,1 @@
+document.querySelector('#form').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget);document.querySelector('#out').textContent=`Xin chào ${d.get('name')}! Email: ${d.get('email')}`});

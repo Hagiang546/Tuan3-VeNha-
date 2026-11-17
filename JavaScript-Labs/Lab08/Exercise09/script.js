@@ -1,0 +1,1 @@
+const greet=name=>'Xin chào '+name;function run(fn,value){return fn(value)}document.querySelector('#out').textContent=run(greet,'Giang')+' — hàm được truyền như đối số.';
