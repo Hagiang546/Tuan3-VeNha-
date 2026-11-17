@@ -1,1 +1,0 @@
-const learner={name:'Ngô Hà Giang',id:'31241026193'};console.log(learner);console.table([learner,{name:'Ví dụ',id:'JS02'}]);document.querySelector('#out').textContent='Đã ghi dữ liệu vào Console (F12).';

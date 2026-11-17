@@ -1,1 +1,0 @@
-const el=document.querySelector('#chosen');document.querySelector('#out').textContent=`Cha: ${el.parentElement.tagName}; phần tử kế tiếp: ${el.nextElementSibling.textContent}; số con: ${el.parentElement.children.length}`;

@@ -1,1 +1,0 @@
-const products=[{name:'Bàn phím cơ',price:650000},{name:'Chuột',price:290000},{name:'Màn hình',price:3200000}];document.querySelector('#out').innerHTML='<ul>'+products.map(p=>`<li>${p.name}: ${p.price.toLocaleString('vi-VN')}đ</li>`).join('')+'</ul>';
