@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 10.4 – Adding and Manipulating DOM Elements</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 10: JavaScript 3: jQuery</a></div></header>
+<main class="wrap">
+<h1>Exercise 10.4 – Adding and Manipulating DOM Elements</h1>
+<p class="lead">Thao tác DOM bằng jQuery: append, prepend, before, after, clone, html/text, remove và empty trên danh sách giỏ hàng.</p>
+<section class="card"><h2>Danh sách giỏ hàng</h2>
+<ul id="cart" class="plain"></ul>
+<p class="row"><button data-act="append">append()</button><button data-act="prepend">prepend()</button><button data-act="before">before()</button><button data-act="after">after()</button>
+<button data-act="clone">clone()</button><button data-act="html">html()/text()</button><button data-act="remove">remove()</button><button data-act="empty">empty()</button><button data-act="reset" class="alt">Đặt lại</button></p>
+<p id="info" class="out"></p></section>
+<nav class="pager" aria-label="Chuyển Exercise"><a class="btn btn-ghost" href="../Exercise03/">← Exercise 10.3</a><a class="btn btn-ghost" href="../Exercise05/">Exercise 10.5 →</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"><\/script>');</script>
+<script src="script.js"></script>
+</body>
+</html>

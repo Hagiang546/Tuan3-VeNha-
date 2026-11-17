@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 8.3 – Variables, Data Types and Operators</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 08: JavaScript 1: Language Foundations</a></div></header>
+<main class="wrap">
+<h1>Exercise 8.3 – Variables, Data Types and Operators</h1>
+<p class="lead">Khai báo biến với let/const/var, quan sát kiểu dữ liệu bằng typeof, thử các toán tử số học và so sánh (== và ===), rồi tính tiền đơn hàng có giảm giá và VAT.</p>
+<section class="card"><h2>Kiểu dữ liệu và typeof</h2>
+<div class="scroll"><table><thead><tr><th>Loại</th><th>Giá trị</th><th>typeof</th></tr></thead><tbody id="types"></tbody></table></div>
+<p class="note">Chú ý: <code>typeof null</code> trả về <code>"object"</code> – đây là đặc điểm lịch sử của JavaScript.</p></section>
+<section class="card"><h2>let, const và toán tử</h2><pre id="ops" class="out"></pre></section>
+<section class="card"><h2>Tính tiền đơn hàng</h2>
+<form id="f" class="row"><label>Đơn giá (đ)<input id="price" type="number" value="189000" min="0"></label>
+<label>Số lượng<input id="qty" type="number" value="2" min="1"></label>
+<label>Giảm giá (%)<input id="disc" type="number" value="10" min="0" max="100"></label><button>Tính tiền</button></form>
+<pre id="result" class="out"></pre></section>
+<nav class="pager" aria-label="Chuyển Exercise"><a class="btn btn-ghost" href="../Exercise02/">← Exercise 8.2</a><a class="btn btn-ghost" href="../Exercise04/">Exercise 8.4 →</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

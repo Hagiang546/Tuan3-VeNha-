@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 8.9 – Browser Console and Debugging</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 08: JavaScript 1: Language Foundations</a></div></header>
+<main class="wrap">
+<h1>Exercise 8.9 – Browser Console and Debugging</h1>
+<p class="lead">Làm quen với Browser Console: console.log/info/warn/error, console.table, console.group, console.time, bắt lỗi bằng try/catch và dừng chương trình bằng debugger.</p>
+<section class="card" id="main-card"><h2>Thực hành với Console</h2>
+<p>Mở DevTools (<kbd>F12</kbd>) → tab <strong>Console</strong>, sau đó bấm các nút.</p>
+<p class="row"><button data-act="log">log / info / warn / error</button><button data-act="table">console.table</button><button data-act="group">console.group</button>
+<button data-act="time">console.time</button><button data-act="try">try / catch</button><button data-act="debugger">debugger</button></p>
+<ul id="panel" class="log"></ul></section>
+<section class="card"><h2>Gợi ý kiểm tra mã</h2><ol>
+<li>Tab <strong>Console</strong>: xem log, cảnh báo, lỗi (màu đỏ) kèm tên file và số dòng.</li>
+<li>Tab <strong>Sources</strong>: bấm số dòng để đặt breakpoint, bấm lại nút để dừng, dùng <kbd>F10</kbd>/<kbd>F11</kbd> chạy từng bước.</li>
+<li>Gõ trực tiếp vào Console, ví dụ <code>typeof document</code> hoặc <code>document.title</code>.</li></ol></section>
+<nav class="pager" aria-label="Chuyển Exercise"><a class="btn btn-ghost" href="../Exercise08/">← Exercise 8.8</a><a class="btn btn-ghost" href="../">Danh sách Lab 08</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

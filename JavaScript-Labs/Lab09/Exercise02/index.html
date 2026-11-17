@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 9.2 – Changing Content, Attributes and Styles</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 09: JavaScript 2: DOM and Events</a></div></header>
+<main class="wrap">
+<h1>Exercise 9.2 – Changing Content, Attributes and Styles</h1>
+<p class="lead">Thay đổi thẻ sản phẩm bằng DOM: textContent, innerHTML, setAttribute/getAttribute, classList.toggle, thuộc tính style và ẩn/hiện phần tử bằng display.</p>
+<section class="card"><article id="sp" class="sp-card"><span id="badge" class="badge">Mới</span>
+<h3 id="ten">Tã quần Animo size L</h3><p id="gia">Giá: <span>189.000 đ</span></p>
+<p><a id="lien" href="https://www.concung.com/" target="_blank" rel="noopener">Xem chi tiết</a></p></article></section>
+<section class="card"><h2>Thay đổi nội dung, thuộc tính, kiểu dáng</h2>
+<p class="row" id="acts"><button data-act="text">textContent</button><button data-act="html">innerHTML</button><button data-act="attr">setAttribute</button>
+<button data-act="badge">classList.toggle</button><button data-act="style">style</button><button data-act="hide">display</button><button data-act="reset" class="alt">Tải lại</button></p>
+<p id="info" class="out">Bấm một nút để thay đổi thẻ sản phẩm ở trên.</p></section>
+<nav class="pager" aria-label="Chuyển Exercise"><a class="btn btn-ghost" href="../Exercise01/">← Exercise 9.1</a><a class="btn btn-ghost" href="../Exercise03/">Exercise 9.3 →</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

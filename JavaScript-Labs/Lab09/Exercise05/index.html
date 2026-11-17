@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 9.5 – Forms and Input Validation</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 09: JavaScript 2: DOM and Events</a></div></header>
+<main class="wrap">
+<h1>Exercise 9.5 – Forms and Input Validation</h1>
+<p class="lead">Biểu mẫu đăng ký tài khoản có kiểm tra dữ liệu bằng JavaScript: họ tên, email, số điện thoại Việt Nam, mật khẩu, nhập lại mật khẩu và đồng ý điều khoản; báo lỗi ngay dưới từng ô.</p>
+<section class="card"><h2>Đăng ký tài khoản</h2>
+<form id="reg" novalidate>
+<div class="field"><label for="ho">Họ và tên</label><input id="ho" type="text" autocomplete="name"><small class="err" id="e-ho"></small></div>
+<div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email"><small class="err" id="e-email"></small></div>
+<div class="field"><label for="sdt">Số điện thoại</label><input id="sdt" type="tel" autocomplete="tel"><small class="err" id="e-sdt"></small></div>
+<div class="field"><label for="mk">Mật khẩu</label><input id="mk" type="password" autocomplete="new-password"><small class="err" id="e-mk"></small></div>
+<div class="field"><label for="mk2">Nhập lại mật khẩu</label><input id="mk2" type="password" autocomplete="new-password"><small class="err" id="e-mk2"></small></div>
+<div class="field"><label><input id="dk" type="checkbox">Tôi đồng ý với điều khoản mua sắm</label><small class="err" id="e-dk"></small></div>
+<p class="row"><button>Đăng ký</button><button type="reset" class="alt">Nhập lại</button></p></form>
+<p id="ok" class="ok" hidden></p></section>
+<nav class="pager" aria-label="Chuyển Exercise"><a class="btn btn-ghost" href="../Exercise04/">← Exercise 9.4</a><a class="btn btn-ghost" href="../Exercise06/">Exercise 9.6 →</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

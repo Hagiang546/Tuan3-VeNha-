@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 8.1 – Enabling/Disabling JavaScript</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 08: JavaScript 1: Language Foundations</a></div></header>
+<main class="wrap">
+<h1>Exercise 8.1 – Enabling/Disabling JavaScript</h1>
+<p class="lead">Kiểm tra trạng thái JavaScript của trình duyệt: khi script chạy, trang đổi sang &quot;BẬT&quot;; khi tắt JavaScript, trang giữ nội dung mặc định và hiện thông báo trong thẻ &lt;noscript&gt;.</p>
+<section class="card"><h2>Kết quả kiểm tra</h2>
+<p>Trạng thái: <strong id="status" class="status status-off">JavaScript đang TẮT</strong></p>
+<p id="time" class="muted"></p>
+<noscript><p class="note warn">Bạn đang xem thông báo trong thẻ &lt;noscript&gt;: trình duyệt đã tắt JavaScript nên các đoạn mã bên dưới không chạy.</p></noscript></section>
+<section class="card"><h2>Cách bật/tắt JavaScript trong Chrome</h2><ol>
+<li>Mở trang này rồi nhấn <kbd>F12</kbd> để mở DevTools.</li>
+<li>Nhấn <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, gõ <em>Disable JavaScript</em> rồi nhấn Enter.</li>
+<li>Tải lại trang (<kbd>F5</kbd>): dòng trạng thái giữ chữ TẮT và hiện thông báo noscript.</li>
+<li>Làm lại bước 2 với <em>Enable JavaScript</em> để bật lại.</li></ol></section>
+<nav class="pager" aria-label="Chuyển Exercise"><span></span><a class="btn btn-ghost" href="../Exercise02/">Exercise 8.2 →</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

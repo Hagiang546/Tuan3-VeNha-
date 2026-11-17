@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 10.6 – Simple jQuery Animation</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 10: JavaScript 3: jQuery</a></div></header>
+<main class="wrap">
+<h1>Exercise 10.6 – Simple jQuery Animation</h1>
+<p class="lead">Tạo hoạt ảnh bằng animate(): di chuyển, phóng to, làm mờ, nối nhiều hiệu ứng với delay (hàng đợi), dừng bằng stop(); thêm hiệu ứng nảy cho số lượng trên giỏ hàng.</p>
+<section class="card"><h2>Quả bóng và animate()</h2>
+<div id="stage" class="stage"><div id="ball" class="ball"></div></div>
+<p class="row"><button data-a="right">Di chuyển phải</button><button data-a="grow">Phóng to</button><button data-a="fade">Mờ rồi hiện</button><button data-a="chain">Chuỗi hiệu ứng</button><button data-a="stop" class="alt">stop()</button><button data-a="reset" class="alt">Đặt lại</button></p>
+<p id="info" class="out">Bấm một nút để chạy hiệu ứng.</p></section>
+<section class="card"><h2>Hiệu ứng thêm vào giỏ</h2><p>Giỏ hàng: <span id="cartBadge" class="cart-badge">0</span></p><button id="addCart">Thêm Tã quần Animo</button></section>
+<nav class="pager" aria-label="Chuyển Exercise"><a class="btn btn-ghost" href="../Exercise05/">← Exercise 10.5</a><a class="btn btn-ghost" href="../Exercise07/">Exercise 10.7 →</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"><\/script>');</script>
+<script src="script.js"></script>
+</body>
+</html>

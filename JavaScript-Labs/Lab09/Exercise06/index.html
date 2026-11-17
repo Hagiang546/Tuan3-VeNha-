@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 9.6 – Event Debugging</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 09: JavaScript 2: DOM and Events</a></div></header>
+<main class="wrap">
+<h1>Exercise 9.6 – Event Debugging</h1>
+<p class="lead">Tìm hiểu cách sự kiện lan truyền (bubbling/capturing, stopPropagation), đọc đối tượng event (target, currentTarget, key, toạ độ chuột) và dùng DevTools để theo dõi sự kiện.</p>
+<section class="card"><h2>Lan truyền sự kiện</h2>
+<label><input type="checkbox" id="cap">Dùng capture</label> <label><input type="checkbox" id="stop">stopPropagation() tại "middle"</label>
+<div id="outer" class="nest n1">outer<div id="middle" class="nest n2">middle<div id="inner" class="nest n3">inner</div></div></div></section>
+<section class="card"><h2>Đối tượng event</h2>
+<input id="kb" type="text" placeholder="Gõ phím để xem event.key"><div id="pad" class="box small">Di chuột trong vùng này</div><p id="ev" class="out">Chưa có sự kiện.</p></section>
+<section class="card"><h2>Nhật ký</h2><p><button id="clr" class="alt">Xóa nhật ký</button></p><ul id="log" class="log"></ul></section>
+<section class="card"><h2>Công cụ gỡ lỗi sự kiện</h2><ol>
+<li>DevTools → tab <strong>Elements</strong> → chọn phần tử → ngăn <strong>Event Listeners</strong> để xem các sự kiện đã gắn.</li>
+<li>Trong Console gõ <code>monitorEvents($0, 'click')</code> (với <code>$0</code> là phần tử đang chọn) để in mọi sự kiện click; <code>unmonitorEvents($0)</code> để dừng.</li>
+<li>Đặt breakpoint tại hàm xử lý trong tab Sources rồi bấm vào phần tử.</li></ol></section>
+<nav class="pager" aria-label="Chuyển Exercise"><a class="btn btn-ghost" href="../Exercise05/">← Exercise 9.5</a><a class="btn btn-ghost" href="../">Danh sách Lab 09</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

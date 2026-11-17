@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 10.7 – GET Requests and jqXHR</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 10: JavaScript 3: jQuery</a></div></header>
+<main class="wrap">
+<h1>Exercise 10.7 – GET Requests and jqXHR</h1>
+<p class="lead">Gửi yêu cầu GET bằng $.get và $.getJSON để đọc dữ liệu sản phẩm (products.json) và một API công khai; xử lý kết quả bằng done/fail/always và đọc thông tin từ đối tượng jqXHR (status, statusText, readyState, header).</p>
+<section class="card"><h2>Gửi yêu cầu GET</h2>
+<p class="row"><button data-r="get">$.get() – products.json</button><button data-r="json">$.getJSON() – bảng sản phẩm</button><button data-r="api">$.get() – API công khai</button><button data-r="404">GET sai đường dẫn (404)</button></p>
+<h3>Thông tin jqXHR</h3><pre id="xhr" class="out">Chưa gửi yêu cầu.</pre></section>
+<section class="card"><h2>Kết quả</h2><div id="result" class="scroll"><p class="muted">Chưa có dữ liệu.</p></div></section>
+<p class="note warn">Lưu ý: nếu mở file trực tiếp bằng đường dẫn <code>file:///</code>, trình duyệt sẽ chặn việc đọc products.json. Hãy chạy bằng Live Server (VS Code) hoặc xem trên GitHub Pages.</p>
+<nav class="pager" aria-label="Chuyển Exercise"><a class="btn btn-ghost" href="../Exercise06/">← Exercise 10.6</a><a class="btn btn-ghost" href="../">Danh sách Lab 10</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"><\/script>');</script>
+<script src="script.js"></script>
+</body>
+</html>

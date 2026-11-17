@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 8.7 – Working with Arrays</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 08: JavaScript 1: Language Foundations</a></div></header>
+<main class="wrap">
+<h1>Exercise 8.7 – Working with Arrays</h1>
+<p class="lead">Quản lý danh sách sản phẩm bằng mảng: push/pop/unshift/shift, sort, filter, map, reduce và find; mỗi thao tác cập nhật bảng hiển thị.</p>
+<section class="card" id="main-card"><h2>Danh sách sản phẩm</h2>
+<p class="row"><button data-act="push">push()</button><button data-act="pop">pop()</button><button data-act="unshift">unshift()</button><button data-act="shift">shift()</button>
+<button data-act="sort">sort() theo giá</button><button data-act="filter">filter() &lt; 200.000 đ</button><button data-act="map">map() giảm 10%</button>
+<button data-act="reduce">reduce() tổng</button><button data-act="find">find() "Takato"</button><button data-act="reset" class="alt">Đặt lại</button></p>
+<div class="scroll"><table><thead><tr><th>#</th><th>Tên</th><th>Giá</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p id="info" class="out"></p></section>
+<nav class="pager" aria-label="Chuyển Exercise"><a class="btn btn-ghost" href="../Exercise06/">← Exercise 8.6</a><a class="btn btn-ghost" href="../Exercise08/">Exercise 8.8 →</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

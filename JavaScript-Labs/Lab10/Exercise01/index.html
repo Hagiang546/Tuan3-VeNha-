@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 10.1 – Installing and Using jQuery</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 10: JavaScript 3: jQuery</a></div></header>
+<main class="wrap">
+<h1>Exercise 10.1 – Installing and Using jQuery</h1>
+<p class="lead">Cài đặt jQuery qua CDN (kèm bản dự phòng từ cdnjs), kiểm tra phiên bản bằng $.fn.jquery, dùng $(document).ready và đổi nội dung phần tử bằng jQuery.</p>
+<section class="card"><h2>Kết quả cài đặt</h2><p id="ver" class="out">Đang kiểm tra…</p><p id="ready" class="out"></p></section>
+<section class="card"><h2>Thẻ script đã dùng</h2>
+<pre class="out">&lt;script src="https://code.jquery.com/jquery-3.7.1.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;window.jQuery || document.write('&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"&gt;&lt;/script&gt;');&lt;/script&gt;</pre>
+<p class="note">Nếu CDN đầu tiên bị chặn, trang tự nạp bản dự phòng từ cdnjs.</p></section>
+<section class="card"><h2>Thử nhanh</h2><p id="hello">Xin chào từ HTML thuần.</p><button id="btn">Đổi nội dung bằng jQuery</button></section>
+<nav class="pager" aria-label="Chuyển Exercise"><span></span><a class="btn btn-ghost" href="../Exercise02/">Exercise 10.2 →</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"><\/script>');</script>
+<script src="script.js"></script>
+</body>
+</html>

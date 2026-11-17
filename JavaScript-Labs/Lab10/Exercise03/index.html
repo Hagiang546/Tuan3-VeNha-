@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 10.3 – jQuery Events</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 10: JavaScript 3: jQuery</a></div></header>
+<main class="wrap">
+<h1>Exercise 10.3 – jQuery Events</h1>
+<p class="lead">Xử lý sự kiện bằng jQuery: tìm kiếm trực tiếp với keyup, click chọn mục, hover bằng mouseenter/mouseleave, uỷ quyền sự kiện với on(), one() và off().</p>
+<section class="card"><h2>Tìm kiếm trực tiếp (keyup)</h2>
+<input id="q" type="text" placeholder="Gõ tên sản phẩm, ví dụ: tã" size="30">
+<ul id="ds" class="plain"><li>Tã quần Animo</li><li>Tã quần Takato</li><li>Tã dán Bobby</li><li>Khăn ướt Pigeon</li><li>Sữa tắm Johnson</li></ul>
+<p id="found" class="note"></p></section>
+<section class="card"><h2>Click, hover, on(), one(), off()</h2>
+<p class="row"><button id="add">Thêm sản phẩm mới</button><button id="once" class="alt">one(): chỉ chạy 1 lần</button><button id="offBtn" class="alt">off(): tắt hover</button></p>
+<p id="info" class="out">Bấm vào một sản phẩm trong danh sách.</p></section>
+<nav class="pager" aria-label="Chuyển Exercise"><a class="btn btn-ghost" href="../Exercise02/">← Exercise 10.2</a><a class="btn btn-ghost" href="../Exercise04/">Exercise 10.4 →</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"><\/script>');</script>
+<script src="script.js"></script>
+</body>
+</html>

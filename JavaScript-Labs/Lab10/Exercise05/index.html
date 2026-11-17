@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 10.5 – jQuery Effects (show/hide, fade, slide)</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 10: JavaScript 3: jQuery</a></div></header>
+<main class="wrap">
+<h1>Exercise 10.5 – jQuery Effects (show/hide, fade, slide)</h1>
+<p class="lead">Dùng hiệu ứng ẩn/hiện của jQuery: hide/show/toggle, fadeIn/fadeOut/fadeTo, slideUp/slideDown/slideToggle với tốc độ tuỳ chọn và hàm callback; áp dụng slideToggle cho mục câu hỏi thường gặp.</p>
+<section class="card"><h2>Hiệu ứng ẩn/hiện</h2>
+<div class="stagebox"><div id="fx" class="box small">Khuyến mãi cuối tuần: giảm 10% tã quần</div></div>
+<p class="row"><select id="speed" aria-label="Tốc độ"><option value="slow">slow</option><option value="400" selected>400 ms</option><option value="fast">fast</option></select>
+<button data-fx="hide">hide</button><button data-fx="show">show</button><button data-fx="toggle">toggle</button>
+<button data-fx="fadeIn">fadeIn</button><button data-fx="fadeOut">fadeOut</button><button data-fx="fadeToggle">fadeToggle</button><button data-fx="fadeTo">fadeTo(0.4)</button>
+<button data-fx="slideUp">slideUp</button><button data-fx="slideDown">slideDown</button><button data-fx="slideToggle">slideToggle</button></p>
+<p id="info" class="out">Chọn tốc độ rồi bấm một hiệu ứng.</p></section>
+<section class="card faq"><h2>Câu hỏi thường gặp (slideToggle)</h2>
+<h3 class="q" tabindex="0">Phí vận chuyển được tính thế nào?</h3><p class="a">Đơn từ 500.000 đ được miễn phí vận chuyển; đơn nhỏ hơn tính theo khu vực giao hàng.</p>
+<h3 class="q" tabindex="0">Bao lâu tôi nhận được hàng?</h3><p class="a">Nội thành thường giao trong 1–2 ngày, các tỉnh khác từ 3–5 ngày.</p>
+<h3 class="q" tabindex="0">Tôi có thể đổi trả sản phẩm không?</h3><p class="a">Có, trong vòng 7 ngày nếu sản phẩm còn nguyên tem và chưa sử dụng.</p></section>
+<nav class="pager" aria-label="Chuyển Exercise"><a class="btn btn-ghost" href="../Exercise04/">← Exercise 10.4</a><a class="btn btn-ghost" href="../Exercise06/">Exercise 10.6 →</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"><\/script>');</script>
+<script src="script.js"></script>
+</body>
+</html>

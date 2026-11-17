@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JavaScript Labs – Thực hành Chương 4</title>
+<link rel="stylesheet" href="css/style.css">
+<meta name="description" content="Portfolio thực hành JavaScript, DOM và jQuery cho môn Phát triển ứng dụng TMĐT.">
+</head>
+<body>
+<header class="site-head"><div class="wrap"><a class="brand" href="#top">JS<b>Labs</b></a>
+<nav aria-label="Điều hướng chính"><a href="#gioi-thieu">Giới thiệu</a><a href="#labs">Các bài Lab</a><a href="#da-hoc">Đã học được</a><a href="#tu-danh-gia">Tự đánh giá</a></nav></div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+ <div>
+  <img class="avatar" src="images/avatar.jpg" alt="Ảnh đại diện của sinh viên" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar',textContent:'SV',title:'Thêm ảnh vào images/avatar.jpg'}))">
+  <h1 class="name"><span class="todo">[Họ và tên]</span></h1>
+  <dl class="facts">
+   <dt>MSSV</dt><dd><span class="todo">[Mã số sinh viên]</span></dd>
+   <dt>Lớp học phần</dt><dd><span class="todo">[Lớp học phần]</span></dd>
+   <dt>Môn học</dt><dd>Phát triển ứng dụng TMĐT – UEH</dd>
+   <dt>GitHub</dt><dd><a href="https://github.com/Hagiang546">github.com/Hagiang546</a></dd>
+  </dl>
+  <p><a class="btn amber" href="#labs">Xem 3 bài Lab</a> <a class="btn-ghost-light" href="https://github.com/Hagiang546/con-cung-ui-improvement">Mã nguồn trên GitHub</a></p>
+ </div>
+ <aside class="demo" aria-labelledby="demo-title">
+  <h2 id="demo-title">Giỏ hàng thử nghiệm</h2>
+  <p class="muted">Đoạn JavaScript của trang này tính lại tiền ngay khi bạn bấm.</p>
+  <div class="demo-row"><div><strong>Tã quần Animo size L</strong><br><span id="unit-price" class="muted"></span></div>
+   <div class="qty"><button type="button" id="minus" aria-label="Giảm số lượng">−</button><output id="qty" aria-live="polite">1</output><button type="button" id="plus" aria-label="Tăng số lượng">+</button></div></div>
+  <p class="demo-total"><span>Thành tiền</span><strong id="total"></strong></p>
+  <p id="ship" class="muted"></p>
+  <p class="muted"><small>Giá chỉ là dữ liệu mẫu cho bài thực hành.</small></p>
+ </aside>
+</div></section>
+
+<section class="block" id="gioi-thieu"><div class="wrap">
+ <h2>Giới thiệu bài thực hành</h2>
+ <div class="prose">
+  <p>Ba bài Lab này đưa mình đi từ nền tảng ngôn ngữ JavaScript, đến thao tác trực tiếp với trang web bằng DOM, rồi rút gọn công việc bằng jQuery. Mục tiêu của mình là tự tay làm được những tương tác quen thuộc của một website bán hàng: tính tiền giỏ hàng, kiểm tra biểu mẫu đăng ký, lọc sản phẩm và tải dữ liệu từ máy chủ.</p>
+  <p>JavaScript là phần làm cho trang web “sống”. HTML dựng nội dung, CSS tạo giao diện, còn JavaScript phản ứng với từng thao tác của khách hàng mà không cần tải lại trang, nên gần như mọi website thương mại điện tử đều dựa vào nó.</p>
+ </div>
+</div></section>
+
+<section class="block" id="labs" style="padding-top:0"><div class="wrap">
+ <h2>Các bài Lab</h2>
+<article class="lab-row"><div class="lab-no">08</div><div><h3>JavaScript 1: Language Foundations</h3><p>Làm quen cú pháp JavaScript, biến, kiểu dữ liệu, hàm, String, Date, Array, Object và Browser Console.</p><p class="chips"><a href="Lab08/Exercise01/">8.1 Enabling/Disabling JavaScript</a><a href="Lab08/Exercise02/">8.2 Embedding JavaScript</a><a href="Lab08/Exercise03/">8.3 Variables, Data Types and Operators</a><a href="Lab08/Exercise04/">8.4 Functions and Control Structures</a><a href="Lab08/Exercise05/">8.5 Working with Strings</a><a href="Lab08/Exercise06/">8.6 Working with Dates</a><a href="Lab08/Exercise07/">8.7 Working with Arrays</a><a href="Lab08/Exercise08/">8.8 Working with Objects</a><a href="Lab08/Exercise09/">8.9 Browser Console and Debugging</a></p></div><a class="btn" href="Lab08/">Mở Lab 08</a></article>
+<article class="lab-row"><div class="lab-no">09</div><div><h3>JavaScript 2: DOM and Events</h3><p>Chọn và thay đổi phần tử HTML, tạo/xóa phần tử, xử lý sự kiện, làm việc với biểu mẫu và kiểm tra dữ liệu.</p><p class="chips"><a href="Lab09/Exercise01/">9.1 Selecting HTML Elements</a><a href="Lab09/Exercise02/">9.2 Changing Content, Attributes and Styles</a><a href="Lab09/Exercise03/">9.3 Creating, Adding and Removing Elements</a><a href="Lab09/Exercise04/">9.4 Simple Event Handling</a><a href="Lab09/Exercise05/">9.5 Forms and Input Validation</a><a href="Lab09/Exercise06/">9.6 Event Debugging</a></p></div><a class="btn" href="Lab09/">Mở Lab 09</a></article>
+<article class="lab-row"><div class="lab-no">10</div><div><h3>JavaScript 3: jQuery</h3><p>Dùng jQuery: selectors, sự kiện, thao tác DOM, hiệu ứng, hoạt ảnh và yêu cầu GET với jqXHR.</p><p class="chips"><a href="Lab10/Exercise01/">10.1 Installing and Using jQuery</a><a href="Lab10/Exercise02/">10.2 jQuery Selectors</a><a href="Lab10/Exercise03/">10.3 jQuery Events</a><a href="Lab10/Exercise04/">10.4 Adding and Manipulating DOM Elements</a><a href="Lab10/Exercise05/">10.5 jQuery Effects</a><a href="Lab10/Exercise06/">10.6 Simple jQuery Animation</a><a href="Lab10/Exercise07/">10.7 GET Requests and jqXHR</a></p></div><a class="btn" href="Lab10/">Mở Lab 10</a></article>
+</div></section>
+
+<section class="block" id="da-hoc" style="padding-top:0"><div class="wrap">
+ <h2>Những kiến thức và kỹ năng đã học được</h2>
+ <div class="cols3">
+  <div><h3>Lab 08 – Nền tảng ngôn ngữ</h3>
+   <p>Mình biết nhúng JavaScript vào HTML bằng ba cách (inline, internal, external) và dùng Console để xem lỗi. Mình hiểu khác biệt giữa let, const, var, các kiểu dữ liệu và vì sao nên so sánh bằng ===. Mình viết được hàm tính phí vận chuyển, tạo slug từ tên sản phẩm, tính ngày giao hàng bằng Date, và dùng mảng, đối tượng để quản lý sản phẩm và giỏ hàng.</p></div>
+  <div><h3>Lab 09 – DOM và sự kiện</h3>
+   <p>DOM cho phép chương trình đọc và sửa chính trang đang hiển thị. Mình chọn phần tử bằng getElementById và querySelector, đổi nội dung, thuộc tính, kiểu dáng, rồi tạo hoặc xóa phần tử để làm giỏ hàng. Mình xử lý click, mouseover, mouseout, hiểu sự kiện lan truyền lên phần tử cha, và viết hàm kiểm tra biểu mẫu đăng ký (email, số điện thoại, mật khẩu) trước khi gửi.</p></div>
+  <div><h3>Lab 10 – jQuery</h3>
+   <p>jQuery giúp viết ngắn gọn hơn: selector giống CSS, on() cho sự kiện (kể cả phần tử thêm sau), append/prepend/remove để thao tác DOM, cùng các hiệu ứng fade, slide và animate. Mình cũng học gửi yêu cầu GET bằng $.get và $.getJSON, rồi đọc kết quả qua jqXHR (status, readyState, done/fail/always) để biết yêu cầu thành công hay lỗi.</p></div>
+ </div>
+</div></section>
+
+<section class="block" id="tu-danh-gia" style="padding-top:0"><div class="wrap">
+ <h2>Tự đánh giá sau khi hoàn thành</h2>
+ <div class="reflect"><p>Sau ba bài Lab, mình nắm được cách JavaScript điều khiển trang web: từ biến, hàm, mảng, đối tượng đến DOM, sự kiện và jQuery. Lab 09 hữu ích nhất vì mình tự làm được giỏ hàng và biểu mẫu đăng ký có kiểm tra dữ liệu, rất giống chức năng của một website bán hàng thật. Phần khó nhất là Lab 10 khi gửi yêu cầu GET, vì phải hiểu xử lý bất đồng bộ và cách đọc jqXHR. Mình có thể áp dụng kiến thức này để làm bộ lọc sản phẩm theo giá, cập nhật tổng tiền giỏ hàng, kiểm tra thông tin giao hàng và hiệu ứng khi thêm vào giỏ. Mình cần luyện thêm việc gỡ lỗi bằng DevTools, viết mã gọn và dễ bảo trì hơn, và làm quen với fetch cùng Promise.</p></div>
+</div></section>
+</main>
+<footer class="site-foot"><div class="wrap">Bài thực hành cá nhân – Phát triển ứng dụng TMĐT, UEH – <span id="year"></span></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

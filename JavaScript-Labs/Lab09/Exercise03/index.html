@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 9.3 – Creating, Adding and Removing Elements</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="lab-header"><div class="wrap"><a href="../../">← Trang chủ JavaScript-Labs</a><a href="../">Lab 09: JavaScript 2: DOM and Events</a></div></header>
+<main class="wrap">
+<h1>Exercise 9.3 – Creating, Adding and Removing Elements</h1>
+<p class="lead">Xây dựng giỏ hàng bằng DOM: tạo phần tử với createElement, thêm bằng appendChild/insertBefore, xóa bằng remove/removeChild và cập nhật tổng tiền sau mỗi thay đổi.</p>
+<section class="card"><h2>Giỏ hàng</h2>
+<form id="f" class="row"><label>Tên sản phẩm<input id="ten" type="text" placeholder="Tã quần Animo"></label>
+<label>Giá (đ)<input id="gia" type="number" min="0" placeholder="189000"></label>
+<button>Thêm cuối giỏ</button><button type="button" id="btn-top" class="alt">Thêm lên đầu</button><button type="button" id="btn-clear" class="alt">Xóa hết</button></form>
+<ul id="cart" class="cart"></ul><p id="empty" class="note">Giỏ hàng trống – hãy thêm sản phẩm.</p><p><strong id="total">Tổng: 0 đ</strong></p></section>
+<nav class="pager" aria-label="Chuyển Exercise"><a class="btn btn-ghost" href="../Exercise02/">← Exercise 9.2</a><a class="btn btn-ghost" href="../Exercise04/">Exercise 9.4 →</a></nav>
+</main>
+<script src="../../js/utils.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
