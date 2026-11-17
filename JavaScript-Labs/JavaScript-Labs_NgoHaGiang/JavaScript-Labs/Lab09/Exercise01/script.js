@@ -1,0 +1,1 @@
+const items=document.querySelectorAll('.item');document.querySelector('#out').textContent='Đã chọn '+items.length+' phần tử bằng querySelectorAll.';items.forEach(x=>x.style.borderLeft='4px solid #3157a4');

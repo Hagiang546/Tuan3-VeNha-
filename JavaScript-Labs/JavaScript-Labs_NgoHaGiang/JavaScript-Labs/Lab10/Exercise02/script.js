@@ -1,0 +1,1 @@
+$(function(){$('#msg').val('Nội dung cập nhật bằng jQuery');$('#title').html('Tiêu đề <em>jQuery</em>');$('button').css('border-radius','20px');$('.selected').addClass('success');});

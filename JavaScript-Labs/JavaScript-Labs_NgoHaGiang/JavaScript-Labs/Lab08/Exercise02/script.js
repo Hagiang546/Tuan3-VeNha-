@@ -1,0 +1,1 @@
+document.querySelector('#out').textContent = 'Xin chào Ngô Hà Giang! Đây là JavaScript nhúng.';

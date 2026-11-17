@@ -1,0 +1,1 @@
+$(function(){$('#out').text('jQuery '+$.fn.jquery+' đã được nạp thành công.').addClass('success');});

@@ -1,0 +1,1 @@
+const prices=[120000,250000,89000,175000];const sale=prices.map(x=>x*.9);const total=prices.reduce((a,b)=>a+b,0);document.querySelector('#out').textContent=`Giá gốc: ${prices.join(', ')}\nGiảm 10%: ${sale.join(', ')}\nTổng: ${total.toLocaleString('vi-VN')}đ`;

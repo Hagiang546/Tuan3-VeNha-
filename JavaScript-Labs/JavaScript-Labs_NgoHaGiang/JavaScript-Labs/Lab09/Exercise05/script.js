@@ -1,0 +1,1 @@
+window.addEventListener('load',()=>{document.querySelector('#out').textContent='Sự kiện load đã chạy sau khi trang tải xong.';document.querySelector('#out').classList.add('success')});

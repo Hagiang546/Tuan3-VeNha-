@@ -1,0 +1,1 @@
+$(function(){$('#after').click(()=>$('.panel').after($('<p class="notice">Phần tử chèn sau panel</p>')));$('#append').click(()=>$('.panel').append($('<b> · append</b>')));$('#prepend').click(()=>$('.panel').prepend($('<b>prepend · </b>')));});
