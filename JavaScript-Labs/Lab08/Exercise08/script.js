@@ -1,1 +1,0 @@
-function total(price,qty){return price*qty}const money=n=>n.toLocaleString('vi-VN')+'đ';document.querySelector('#out').textContent='3 sản phẩm: '+money(total(79000,3));

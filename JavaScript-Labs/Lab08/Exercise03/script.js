@@ -1,1 +1,0 @@
-document.querySelector('#out').textContent='Tệp external script.js đã được tải thành công.';

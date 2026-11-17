@@ -1,1 +1,0 @@
-$(function(){$(':password').css('background','#fff2b3');$('form :nth-child(4n)').css('outline','1px solid #93c5fd');$('label:contains("Từ khóa")').css('color','#3157a4');});

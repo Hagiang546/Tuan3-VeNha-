@@ -1,1 +1,0 @@
-document.querySelector('#out').textContent='JavaScript hoạt động; nội dung dự phòng nằm trong noscript.';

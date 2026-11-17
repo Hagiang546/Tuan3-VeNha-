@@ -1,1 +1,0 @@
-$(function(){$('#fadein').click(()=>$('figure').fadeIn(700));$('#fadeout').click(()=>$('figure').fadeOut(700));$('#toggle').click(()=>$('figure').fadeToggle(500));$('#slide').click(()=>$('#slidebox').slideToggle(700));});
