@@ -1,1 +1,0 @@
-const list=document.querySelector('#list');document.querySelector('#add').onclick=()=>{const li=document.createElement('li');li.textContent='Sản phẩm mới '+(list.children.length+1);list.append(li)};document.querySelector('#remove').onclick=()=>list.lastElementChild?.remove();

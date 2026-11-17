@@ -1,1 +1,0 @@
-$(function(){$('#animate').click(()=>$('#box').stop(true).css({left:0,top:0}).animate({left:'180px',opacity:.6,height:'65px',width:'65px'},500).animate({top:'80px',opacity:1},500).animate({left:0,top:0,height:'45px',width:'45px'},500));});

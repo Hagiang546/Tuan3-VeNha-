@@ -1,1 +1,0 @@
-$(function(){$('#load').click(()=>{$('#out').text('Đang tải...');$.get('https://jsonplaceholder.typicode.com/posts/1').done(data=>$('#out').text(JSON.stringify(data,null,2))).fail(()=>$('#out').text('Không thể tải dữ liệu. Kiểm tra Internet.'))});});
